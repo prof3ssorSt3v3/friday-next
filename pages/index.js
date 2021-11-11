@@ -1,5 +1,6 @@
 /** @jsxImportSource theme-ui */
 
+import Link from 'next/link';
 // import styles from '../styles/Index.module.css';
 
 export default function Home({ books }) {
@@ -17,6 +18,15 @@ export default function Home({ books }) {
       >
         <div>
           <h1 sx={{ fontSize: 8, p: 2 }}>Books App</h1>
+          <p sx={{ p: 2 }}>
+            Click the Books link at the top to see all our books.
+          </p>
+          <p sx={{ p: 2 }}>
+            <Link href="/books">
+              <a>Or tap here if this is closer</a>
+            </Link>
+            .
+          </p>
         </div>
       </div>
     </div>
