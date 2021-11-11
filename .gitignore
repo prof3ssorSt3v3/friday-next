@@ -8,7 +8,7 @@
 # testing
 /coverage
 
-# next.js
+# next.js - ignores the build folder
 /.next/
 /out/
 
