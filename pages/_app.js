@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
 
   //add data here... inside app...
   const [books, setBooks] = useState([]);
-
+  //replacing lines 13 - 27 with our Context Object and useContext hook
   useEffect(() => {
     //get data on initial load
     let url = '/api/books';

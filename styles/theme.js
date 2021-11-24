@@ -50,6 +50,7 @@ const theme = {
   },
   styles: {
     ...polaris.styles,
+    //your custom overrides for the styles
   },
 };
 

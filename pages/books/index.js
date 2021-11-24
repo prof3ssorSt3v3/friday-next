@@ -1,4 +1,8 @@
 /** @jsxImportSource theme-ui */
+//Pragma must be the first line in every file that uses "sx"
+//Tells babel/webpack to use theme-ui to compile JSX
+// @jsx jsx */ //<----THAT IS THE OLD VERSION
+//import {jsx} from `theme-ui`;
 
 import Link from 'next/link';
 
