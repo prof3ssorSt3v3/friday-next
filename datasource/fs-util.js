@@ -3,7 +3,7 @@ import path from 'path';
 
 const saveBooks = (data, filename) => {
   try {
-    let p = path.resolve('./datasource/', filename);
+    let p = path.resolve('./', filename);
     writeFileSync(p, JSON.stringify(data));
     //if we get to here then write was successful
   } catch (err) {
@@ -11,7 +11,7 @@ const saveBooks = (data, filename) => {
   }
 };
 const loadBooks = (filename) => {
-  let p = path.resolve('./datasource/' + filename);
+  let p = path.resolve('./' + filename);
   console.log(`Read data from ${p}`);
   try {
     return JSON.parse(readFileSync(p, 'utf8'));
